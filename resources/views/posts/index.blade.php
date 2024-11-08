@@ -35,11 +35,15 @@
             font-size: 20px;
         }
     </style>
+    @vite('resources/css/app.css')
+    @vite('resources/js/app.js')
     @livewireStyles
 </head>
 
 <body>
-    <livewire:post.index />
+
+    <livewire:Post.Index />
+
     @livewireScripts
 </body>
 

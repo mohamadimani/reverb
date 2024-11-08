@@ -15,7 +15,7 @@
                 <p class="post-content text-gray-700 leading-relaxed mb-6">{{ $post->content }}</p>
 
                 <div class="flex items-center gap-2">
-                    <button class="flex items-center gap-1 hover:scale-105 transition-transform" wire:click="like({{ $post->id }})">
+                    <button class="flex items-center gap-1 hover:scale-105 transition-transform" wire:click="broadcast({{ $post->id }})">
                         <i class="fas fa-heart like-button {{ $post->likes->count() > 0 ? 'text-red-500' : 'text-gray-400' }}"></i>
                         <span class="likes-count font-medium">{{ $post->likes->count() }}</span>
                         <span class="text-gray-600">{{ Str::plural('like', $post->likes->count()) }}</span>
